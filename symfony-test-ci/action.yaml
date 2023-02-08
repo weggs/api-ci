@@ -110,7 +110,7 @@ runs:
         DATABASE_URL: ${{inputs.database_url}}
 
     - name: Run functionnal and unit tests
-      run: vendor/bin/phpunit --env="test"
+      run: vendor/bin/phpunit
       shell: bash
       env:
         DATABASE_URL: ${{inputs.database_url}}
